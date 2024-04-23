@@ -1,0 +1,4 @@
+-- AlterTable
+ALTER TABLE "User" ALTER COLUMN "name" DROP NOT NULL,
+ALTER COLUMN "subscription" SET DEFAULT 'Free',
+ALTER COLUMN "url_length" SET DEFAULT 10;
