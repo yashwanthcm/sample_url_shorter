@@ -8,7 +8,7 @@ const Fastify = fastify({
 });
 
 // cron schedule at 12 AM to reset the limit
-cron.schedule("35 * * * * *", async () => {
+cron.schedule("0 0 * * *", async () => {
   console.log("CRON STARTED ");
   try {
     let users = await prisma.user.findMany({ select: { id: true } });
